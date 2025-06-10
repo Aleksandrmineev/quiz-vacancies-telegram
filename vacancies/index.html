@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SiteDescription" />
+    <title>Совтехлит: Вакансии</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../img/content/favicon.png" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li>
+              <a href="../about/index.html">Производство</a>
+            </li>
+            <li><a href="../services/index.html">Услуги</a></li>
+            <li><a href="../products/index.html">Продукция</a></li>
+            <!-- <li><a href="#">Инжиниринговые услуги</a></li> -->
+            <li><a href="../about2/index.html">О предприятии</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="../contacts/index.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="quiz-intro">
+          <div class="container quiz-intro__container">
+            <div class="quiz-intro__content">
+              <header class="header">
+                <div class="container header__grid">
+                  <a href="../index.html" class="header__logo">
+                    <img src="../img/content/logo.png" alt="НПП Совтехлит" />
+                  </a>
+
+                  <div class="header__right">
+                    <div class="header__top">
+                      <span
+                        ><strong>НПП</strong>
+                        <span class="accent">СОВТЕХЛИТ</span></span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </header>
+              <h1 class="quiz-intro__title">
+                Производственное предприятие, специализирующееся на литейном
+                производстве и инжиниринге.
+              </h1>
+              <p class="quiz-intro__text">
+                Мы изготавливаем металлические отливки, разрабатываем технологии
+                литья и обеспечиваем полный цикл производства – от
+                проектирования до готовой продукции.
+              </p>
+              <p class="quiz-intro__text2">
+                Нам нужны ответственные и внимательные сотрудники, готовые
+                работать в команде. Ответьте на 3 вопроса, и мы подберем
+                подходящую вакансию для вас!
+              </p>
+              <!-- <ul class="quiz-intro__contacts">
+                <li><strong>Тел:</strong> +7 (831) 214-06-01</li>
+                <li>
+                  <strong>Адрес:</strong> Нижегородская область, г. Дзержинск,
+                  территория Восточный промрайон, ул. 1 Мая, 1.
+                </li>
+              </ul> -->
+              <a href="#quiz-start" class="btn quiz-start-btn"
+                >✔ НАЧАТЬ РАБОТАТЬ!</a
+              >
+            </div>
+            <div class="quiz-intro__image">
+              <img
+                src="../img/content/intro.png"
+                alt="Работа сотрудников СовТехЛит"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section id="quiz-start" class="quiz quiz--full">
+          <div class="quiz__progress">
+            <div class="quiz__progress-bar">
+              <span style="width: 0%"></span>
+            </div>
+            <p class="quiz__progress-text">
+              Готово: <span class="quiz__progress-value">0%</span>
+            </p>
+          </div>
+
+          <!-- Шаг 1 -->
+          <div class="quiz__step active" data-step="1">
+            <div class="quiz__inner">
+              <h2 class="quiz__question">
+                1. Какой опыт работы у вас есть в литейном производстве?
+              </h2>
+              <form class="quiz__form">
+                <label class="quiz__option">
+                  <input type="radio" name="q1" value="Менее 1 года" />
+                  <span>Менее 1 года</span>
+                </label>
+                <label class="quiz__option">
+                  <input type="radio" name="q1" value="1–3 года" />
+                  <span>1–3 года</span>
+                </label>
+                <label class="quiz__option">
+                  <input type="radio" name="q1" value="Более 3 лет" />
+                  <span>Более 3 лет</span>
+                </label>
+                <label class="quiz__option">
+                  <input type="radio" name="q1" value="Нет опыта" />
+                  <span>Нет опыта</span>
+                </label>
+              </form>
+              <!-- <div class="quiz__nav">
+                <button class="btn btn--outline quiz__prev" disabled>
+                  ← Назад
+                </button>
+                <button class="btn quiz__next">Далее →</button>
+              </div> -->
+            </div>
+          </div>
+
+          <!-- Шаг 2 -->
+          <div class="quiz__step" data-step="2">
+            <div class="quiz__inner">
+              <h2 class="quiz__question">
+                2. Какие виды механической обработки вы выполняли?
+              </h2>
+              <form class="quiz__form">
+                <label class="quiz__option">
+                  <input type="radio" name="q2" value="Токарная обработка" />
+                  <span>Токарная обработка</span>
+                </label>
+                <label class="quiz__option">
+                  <input type="radio" name="q2" value="Фрезерная обработка" />
+                  <span>Фрезерная обработка</span>
+                </label>
+                <label class="quiz__option">
+                  <input type="radio" name="q2" value="Шлифовка" />
+                  <span>Шлифовка</span>
+                </label>
+                <label class="quiz__option">
+                  <input
+                    type="radio"
+                    name="q2"
+                    value="Электроэрозионная резка"
+                  />
+                  <span>Электроэрозионная резка</span>
+                </label>
+                <label class="quiz__option">
+                  <input type="radio" name="q2" value="Не выполнял(а)" />
+                  <span>Не выполнял(а)</span>
+                </label>
+              </form>
+              <!-- <div class="quiz__nav">
+                <button class="btn btn--outline quiz__prev">← Назад</button>
+                <button class="btn quiz__next">Далее →</button>
+              </div> -->
+            </div>
+          </div>
+
+          <!-- Шаг 3 -->
+          <div class="quiz__step" data-step="3">
+            <div class="quiz__inner">
+              <h2 class="quiz__question">
+                3. Какой график работы вам более подходит?
+              </h2>
+              <form class="quiz__form">
+                <label class="quiz__option">
+                  <input type="radio" name="q3" value="Полный рабочий день" />
+                  <span>Полный рабочий день (~300 000 руб/мес)</span>
+                </label>
+                <label class="quiz__option">
+                  <input type="radio" name="q3" value="Гибкий график" />
+                  <span>Гибкий график (~5000 руб/мес)</span>
+                </label>
+              </form>
+              <!-- <div class="quiz__nav">
+                  <button class="btn btn--outline quiz__prev">← Назад</button>
+                  <button type="button" class="btn quiz__next">Далее →</button>
+                </div> -->
+            </div>
+          </div>
+
+          <!-- Шаг 4: Telegram -->
+          <div class="quiz__step" data-step="4" id="quiz-final-telegram">
+            <div class="quiz__inner">
+              <h2 class="quiz__question">
+                Спасибо! Вы можете связаться с нами напрямую
+              </h2>
+              <a href="https://t.me/osnovatelsexa" class="btn" target="_blank"
+                >Начать работать</a
+              >
+            </div>
+          </div>
+
+          <!-- Альтернатива: форма -->
+          <div
+            class="quiz__final-form"
+            id="quiz-final-form"
+            style="display: none"
+          >
+            <div class="quiz__inner">
+              <h2 class="quiz__question">Оставьте ваши данные...</h2>
+              <form class="quiz__callback-form">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Ваше имя"
+                  required
+                />
+                <small class="form-hint--name"> </small>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="+7 XXX XXX XX XX"
+                  required
+                />
+                <small class="form-hint--phone"> </small>
+                <button type="submit" class="btn">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer__inner">
+          <div class="footer__col footer__info">
+            <p>Официальный сайт компании<br />ООО "НПП 'СовТехЛит'"</p>
+            <br />
+            <p>
+              <span class="footer__icon">📞</span> +7 925 229-83-15<br />
+              <span class="footer__icon">✉️</span>
+              <a href="mailto:prom-zakaz@yandex.ru">prom-zakaz@yandex.ru</a>
+            </p>
+          </div>
+
+          <div class="footer__col footer__desc">
+            <p>
+              Производство и разработка литых изделий на заказ, механическая
+              обработка, лаборатория
+            </p>
+          </div>
+
+          <div class="footer__col footer__address">
+            <p>
+              <strong>Адрес:</strong><br />Нижегородская область,<br />г.
+              Дзержинск, ул. 1 Мая, д.1
+            </p>
+            <br />
+            <p>
+              <strong>Юридический адрес:</strong><br />606000, Нижегородская
+              область,<br />г. Дзержинск, шоссе Восточное, д. 2А
+            </p>
+          </div>
+
+          <div class="footer__col footer__links" style="display: none">
+            <a href="#">Новости компании</a><br />
+            <a href="#">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
