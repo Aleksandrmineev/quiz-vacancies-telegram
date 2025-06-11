@@ -158,7 +158,8 @@ a:hover {
 }
 
 button,
-.btn {
+.btn,
+.btn-telegram {
   display: inline-flex;
   padding: var(--btn-padding);
   height: var(--btn-height);
@@ -179,14 +180,26 @@ button,
   text-decoration: none;
 }
 
+.btn-telegram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  color: var(--btn-text-color);
+  font-size: var(--fs-h4);
+  text-transform: uppercase;
+}
+
 button:hover,
-.btn:hover {
+.btn:hover,
+.btn-telegram:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 button:active,
-.btn:active {
+.btn:active,
+.btn-telegram:active {
   transform: translateY(0); /* возвращается на место */
   box-shadow: none; /* 👈 тень исчезает */
 }

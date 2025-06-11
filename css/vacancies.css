@@ -244,28 +244,6 @@
   margin-left: 10px;
 }
 
-.btn-telegram {
-  display: flex;
-  padding: var(--btn-padding);
-  height: var(--btn-height);
-  background-color: var(--btn-bg);
-  color: var(--btn-text-color);
-  font-size: var(--fs-h4);
-  text-transform: uppercase;
-  font-family: var(--font-main);
-  font-weight: var(--font-weight-bold);
-  border: none;
-  border-radius: var(--btn-radius);
-  cursor: pointer;
-  transform: translateY(0);
-  box-shadow: 0 4px 12px rgba(144, 0, 0, 0.5); /* 👈 тень по умолчанию */
-  transition: background-color var(--transition-fast),
-    transform var(--transition-fast), box-shadow var(--transition-fast);
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
-
 .thankyou {
   margin: 4vh auto;
   opacity: 0;
