@@ -290,4 +290,14 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+
+  function openTelegram(username) {
+    // Пробуем открыть tg://
+    window.location.href = "tg://resolve?domain=" + username;
+
+    // Через 1 сек — fallback на https://t.me/
+    setTimeout(function () {
+      window.location.href = "https://t.me/" + username;
+    }, 1000);
+  }
 });
